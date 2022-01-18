@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  padding: 1em;
+  margin: 0;
+}
+
+.right-side {
+  background-image: url("../images/image-intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25em;
+  width: auto;
+}
+
+.right {
+  display: none;
+}
+
+.hero {
+  background-color: #2d2640;
+  padding: 5em 0.5em;
+  margin-top: 0;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  height: 10em;
+  width: 10em;
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-size: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  height: 20em;
+  width: 7em;
+  background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat;
+  bottom: -11em;
+  right: 0;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1em;
+  font-weight: 300;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.hero p {
+  color: white;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  font-size: 15px;
+  font-weight: 30;
+}
+
+.hero a {
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  font-size: 12px;
+  border: white solid 0.1em;
+  padding: 0.25em 1.5em;
+  display: inline-block;
+  margin-top: 0.75em;
+}
+
+.hero a:hover {
+  background-color: white;
+  color: #2d2640;
+  font-weight: 400;
+}
+
+.process-section {
+  background-color: white;
+  position: relative;
+  margin-top: 10em;
+}
+
+.process-section .container .line {
+  background-color: #dad8d8;
+  height: 1px;
+  width: 120px;
+  margin: auto;
+  margin-top: 7em;
+}
+
+.process-section .container h1 {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #343234;
+}
+
+.process-section .container ul {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+}
+
+.process-section .container ul li {
+  margin-bottom: 5em;
+}
+
+.process-section .container ul li h3 {
+  font-family: "DM Serif Display", serif;
+  color: #343234;
+}
+
+.process-section .container ul li p {
+  line-height: 1.5em;
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+}
+
+.work-section {
+  background-color: #2d2640;
+  margin: 5em 2em;
+  padding: 3em 1.5em;
+  position: relative;
+}
+
+.work-section h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1em;
+}
+
+.work-section a {
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  font-size: 12px;
+  border: white solid 0.1em;
+  padding: 0.6em 1.2em;
+  display: inline-block;
+  margin-top: 0.75em;
+  margin-left: 3.25em;
+}
+
+.work-section a:hover {
+  background-color: white;
+  color: #2d2640;
+  font-weight: 400;
+}
+
+.work-section::before {
+  content: "";
+  position: absolute;
+  height: 16em;
+  width: 9em;
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  background-size: cover;
+  z-index: 1;
+}
+
+.contact {
+  background-color: #f8f8f8;
+  padding: 5em 2em;
+  position: relative;
+}
+
+.contact .contact-section {
+  text-align: center;
+  z-index: -1;
+}
+
+.contact .contact-section .logo {
+  width: 6em;
+  margin-bottom: 1em;
+}
+
+.contact .contact-section .social {
+  letter-spacing: 0.5em;
+  margin-bottom: 3em;
+}
+
+.contact .line-2 {
+  background-color: #dad8d8;
+  height: 1px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+.contact ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3em;
+  line-height: 2em;
+}
+
+.contact .company p {
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact .company li {
+  font-family: "Karla", sans-serif;
+  color: #080808;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact .help p {
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact .help li {
+  font-family: "Karla", sans-serif;
+  color: #080808;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact .contact p {
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact .contact li {
+  font-family: "Karla", sans-serif;
+  color: #080808;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact .others p {
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact .others li {
+  font-family: "Karla", sans-serif;
+  color: #080808;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  height: 10em;
+  width: 20em;
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: 0;
+}
+
+nav.mobile-nav {
+  display: block;
+}
+
+nav {
+  text-align: center;
+  background: #191523;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5em;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  line-height: 3em;
+}
+
+nav ul li:hover {
+  border: white solid;
+  padding: 0.05em 0.5em;
+  cursor: pointer;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  height: 10em;
+  width: 20em;
+  background-image: url("../images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  z-index: 0;
+}
+/*# sourceMappingURL=main.css.map */
