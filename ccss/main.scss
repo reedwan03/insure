@@ -155,6 +155,7 @@ body {
   margin: 5em 2em;
   padding: 3em 1.5em;
   position: relative;
+  text-align: center;
 
   h1 {
     color: white;
@@ -176,7 +177,6 @@ body {
     padding: 0.6em 1.2em;
     display: inline-block;
     margin-top: 0.75em;
-    margin-left: 3.25em;
 
     &:hover {
       background-color: white;
@@ -225,7 +225,7 @@ body {
   .line-2 {
     background-color: hsl(0, 3%, 85%);
     height: 1px;
-    width: 500px;
+    width: 80%;
     margin: auto;
     margin-bottom: 3em;
   }
@@ -275,7 +275,7 @@ body {
     }
   }
 
-  .contact {
+  .precontact {
     p {
       font-family: "Karla", sans-serif;
       color: hsl(273, 4%, 51%);
@@ -315,19 +315,17 @@ body {
     content: "";
     position: absolute;
     height: 10em;
-    width: 20em;
+    width: 100%;
     background-image: url("../images/bg-pattern-footer-mobile.svg");
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-
-    background-size: cover;
-    z-index: 0;
   }
 }
 
 nav.mobile-nav {
   display: block;
+  z-index: 9999;
 }
 
 nav {
@@ -339,6 +337,7 @@ nav {
   top: 0;
   left: 0;
   display: none;
+  overflow: hidden;
 
   ul {
     margin: 0;
@@ -371,13 +370,11 @@ nav {
     content: "";
     position: absolute;
     height: 10em;
-    width: 20em;
+    width: 100%;
     background-image: url("../images/bg-pattern-mobile-nav.svg");
     background-repeat: no-repeat;
     left: 0;
     bottom: 0;
-    background-size: cover;
-    z-index: 0;
   }
 }
 

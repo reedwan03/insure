@@ -154,6 +154,7 @@ body {
   margin: 5em 2em;
   padding: 3em 1.5em;
   position: relative;
+  text-align: center;
 }
 
 .work-section h1 {
@@ -176,7 +177,6 @@ body {
   padding: 0.6em 1.2em;
   display: inline-block;
   margin-top: 0.75em;
-  margin-left: 3.25em;
 }
 
 .work-section a:hover {
@@ -222,7 +222,7 @@ body {
 .contact .line-2 {
   background-color: #dad8d8;
   height: 1px;
-  width: 500px;
+  width: 80%;
   margin: auto;
   margin-bottom: 3em;
 }
@@ -268,7 +268,7 @@ body {
   letter-spacing: 0.09em;
 }
 
-.contact .contact p {
+.contact .precontact p {
   font-family: "Karla", sans-serif;
   color: #837d87;
   font-size: 14px;
@@ -276,7 +276,7 @@ body {
   letter-spacing: 0.09em;
 }
 
-.contact .contact li {
+.contact .precontact li {
   font-family: "Karla", sans-serif;
   color: #080808;
   font-size: 16px;
@@ -304,17 +304,16 @@ body {
   content: "";
   position: absolute;
   height: 10em;
-  width: 20em;
+  width: 100%;
   background-image: url("../images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
   top: 0;
   left: 0;
-  background-size: cover;
-  z-index: 0;
 }
 
 nav.mobile-nav {
   display: block;
+  z-index: 9999;
 }
 
 nav {
@@ -326,6 +325,7 @@ nav {
   top: 0;
   left: 0;
   display: none;
+  overflow: hidden;
 }
 
 nav ul {
@@ -359,12 +359,10 @@ nav::before {
   content: "";
   position: absolute;
   height: 10em;
-  width: 20em;
+  width: 100%;
   background-image: url("../images/bg-pattern-mobile-nav.svg");
   background-repeat: no-repeat;
   left: 0;
   bottom: 0;
-  background-size: cover;
-  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */
